@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/jpg" href="./img/logo.png" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="" class="navbar__link">Home</a></li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__link">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#project" class="navbar__link">Project</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+            <picture class="navbar__logo">
+                <img src="./img/logo.png" alt="logotipo de la marca">
+            </picture>
+        </nav>
+    </header>
+    <section class="hero">
+        <article class="hero__content">
+            <h2 class="hero__text">
+                Si se puede <strong>imaginar</strong>, se puede programar
+            </h2>
+            <a id="download" onclick="alerta()" href=""
+                class="hero__button">DOWNLOAD CV <iconify-icon
+                    icon="ph:caret-down-bold"></iconify-icon></a>
+        </article>
+    </section>
+    <main class="secondary-font">
+        <div class="container">
+            <section class="card-profile" id="profile">
+                <picture class="card-profile__img"> <img src="./img/avatar.png" alt="Imagen de perfil"></picture>
+                <article class="card-profile__group">
+                    <h3 class="card-profile__name">Quiroga, Marcelo Emanuel</h2>
+                        <h4 class="secondary-text card-profile__position">Desarrollador Web Fullstack Jr
+                    </h3>
+                    <h5 class="secondary-text card-profile__description">
+                        I'm the helpdesk at the high school. I specialize in web development.
+                        </h4>
+                </article>
+            </section>
+
+            <div class="line"> </div>
+
+            <section class="about" id="about">
+                <h2 class="container__title">About me</h2>
+                <p class="secondary-text container__description">
+                    My name is Emanuel Quiroga, I'm a fullstack developer based in Río Grande, Tierra del Fuego,
+                    Argentina. I have developed many types of applications, from a to-do list to e-commerce platforms.
+                </p>
+                <!-- <div class="line"> </div> -->
+                <article>
+                    <h2 class="container__title">Skills</h2>
+                    <div class="container__description skill">
+                        <span class="text-style-tag bg-blue">HTML</span>
+                        <span class="text-style-tag bg-red">CSS</span>
+                        <span class="text-style-tag bg-yellow">Javascript</span>
+                        <span class="text-style-tag bg-green">Node Js</span>
+                        <span class="text-style-tag bg-blue">Angular</span>
+                        <span class="text-style-tag bg-red">Express</span>
+                        <span class="text-style-tag bg-yellow">MySQL</span>
+                        <span class="text-style-tag bg-green">GIT</span>
+                        <span class="text-style-tag bg-pink">Postman</span>
+                        <span class="text-style-tag bg-blue">Terraform</span>
+                        <span class="text-style-tag bg-yellow">AWS CLI</span>
+                        <span class="text-style-tag bg-red">Flutter</span>
+                        <span class="text-style-tag bg-green">Docker</span>
+                    </div>
+                </article>
+            </section>
+
+            <div class="line"> </div>
+
+            <section class="container experience" id="experience">
+                <h2 class="container__title">Experience </h2>
+                <article class="secondary-text container__description">
+                    <ul class="experience__items">
+              <li class="card-item">
+                            <h3 class="card-item__company">Secretaría de Innovación Tecnológica</h3>
+                            <h4 class="card-item__position">Fullstack Web developer</h4>
+                            <h5 class="card-item__term">01/06/2024 - A la fecha</h5>
+                            <p class="card-item__description">Desarrollo de sistemas web para solucionar/automizar tareas del areá de Educación, soporte al usuario en sistema SUNA
+</p>
+                        </li>
+                        <li class="card-item">
+                            <h3 class="card-item__company">Omega Computación</h3>
+                            <h4 class="card-item__position">Tech Support</h4>
+                            <h5 class="card-item__term">01/03/2016 - 01/04/2018</h5>
+                            <p class="card-item__description">Soporte técnico a empresas. (Administración de redes,
+                                mantenimiento de equipos informáticos, soporte en aplicativos específicos)</p>
+                        </li>
+                        <li class="card-item">
+                            <h3 class="card-item__company">Subsecretaría de Planeamiento Educativo, Informática y
+                                Evaluación</h3>
+                            <h4 class="card-item__position">Referente Informático</h4>
+                            <h5 class="card-item__term">19/09/2011 - 15/03/2020</h5>
+                            <p class="card-item__description">Soporte técnico de programa Conectar Igualdad, Soporte al
+                                usuario en sistema SIGE.</p>
+                        </li>
+                        <li class="card-item">
+                            <h3 class="card-item__company">Colegio Provincial Cmte Luis Piedrabuena</h3>
+                            <h4 class="card-item__position">Referente Informático</h4>
+                            <h5 class="card-item__term">16/03/2020 - A la fecha</h5>
+                            <p class="card-item__description">Soporte en sistemas: SIGE, SIEP, SIGA. Desarrollo de
+                                aplicativos Web (Stack: Angular, MySQL, Node Js), Mantenimiento de red y equipos
+                                informáticos.</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <div class="line"> </div>
+            </section>
+            <section id="project">
+                <h2 class="container__title">Projects</h2>
+                <article class="secondary-text container__description">
+                    <ul class="project-items">
+              <li class="card-item">
+                            <h3 class="card-item__company">Sistema de Control de Ingreso V2</h3>
+                            <h4 class="card-item__position">Fecha del Proyecto: 01/10/2025</h4> - A la Fecha
+                            <p class="card-item__description">En base al proyecto inicial del sistema de control de ingreso, se retomó el proyecto para un areá de gobierno, con el fin de optimizar y garantizar la fidelidad de los datos. Este proyeto es impulsado por un equipo de dos personas, y el cual principalmente esta impulsado en Nestjs y Angular 18
+                            </p>
+                            <a class="card-item__link" href="https://gitlab.com/quirogatdf/control-asistencia">Ir al
+                                repositorio</a> | <a class="card-item__link" href="control-asistencia-frontend.vercel.app">demo</a>
+                        </li>
+                        <li class="card-item">
+                            <h3 class="card-item__company">Proyecto ONG - Alkemy</h3>
+                            <h4 class="card-item__position">Fecha del Proyecto: 05/07/2022</h4>
+                            <p class="card-item__description">Como parte de un equipo de desarrolladores coordinado por
+                                un líder de proyecto, nos tocó desarrollar un API, con el fin de potenciar nuestras
+                                habilidades y preparnos para un entorno de trabajo real.
+                            </p>
+                            <a class="card-item__link" href="https://gitlab.com/quirogatdf/control-asistencia">Ir al
+                                repositorio</a>
+                        </li>
+                        <li class="card-item">
+                            <h3 class="card-item__company">Sistema de control de Ingreso</h3>
+                            <h4 class="card-item__position">Fecha del Proyecto: 07/2022</h4>
+                            <p class="card-item__description">Con el fin de afianzar conocimientos, se desarrolló de
+                                manera personal un proyecto Full Stack (MySQL, Express, Angular, Node Js), el objetivo
+                                del mismo es permitir al usuario registrar su horario de ingreso y salida, a través de
+                                su DNI.
+                            </p>
+                            <a class="card-item__link" href="https://github.com/quirogatdf/OT225-server">Ir al
+                                repositorio</a>
+                        </li>
+                        <li class="card-item">
+                            <h3 class="card-item__company">Portfolio Web</h3>
+                            <h4 class="card-item__position">Fecha del Proyecto: 29/10/2022</h4>
+                            <p class="card-item__description">Se desarrollo una aplicación web de arquitectura
+                                distribuida, que muestra: los datos personales, estudios cursados, experiencia laboral,
+                                habilidades blandas y duras y los proyectos realizados.
+                            </p>
+                            <a class="card-item__link" href="https://github.com/quirogatdf/portfolio-frontend">Ir al
+                                repositorio</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <div class="line"> </div>
+            <section id="contact">
+                <article class="card-contact">
+                    <h2 class="container__title">Contact me</h2>
+                    <div class="card-contact__item"> 
+                        <iconify-icon class="card-contact__icon" icon="material-symbols:mail-outline"></iconify-icon>
+                        <a class="card-contact__link" href="mailto:quirogatdf@gmail.com">quirogatdf@gmail.com</a>
+                    </div>
+                    <div class="card-contact__item">
+                        <iconify-icon class="card-contact__icon" icon="ri:linkedin-fill"></iconify-icon>
+                        <a class="card-contact__link"href="https://www.linkedin.com/in/mequiroga/" target="_blank" rel="noopener noreferrer">/mequiroga</a>
+                    </div>
+                    <div class="card-contact__item">
+                        <iconify-icon class="card-contact__icon" icon="entypo-social:github"></iconify-icon>
+                        <a class="card-contact__link"href="https://github.com/quirogatdf" target="_blank" rel="noopener noreferrer">/quirogatdf</a>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>Design by Quiroga, Marcelo Emanuel - 2023 | <a
+            href="https://github.com/quirogatdf/quirogatdf.github.io">Ir al repositorio</a></footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./js/index.js"> </script>
+</body>
+
+</html>

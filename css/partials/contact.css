@@ -1,0 +1,18 @@
+#contact {
+  display: flex;
+  justify-content: center;
+}
+
+.card-contact__icon {
+  color: var(--light-font-solid);
+  font-size: var(--font-large);
+  margin: var(--spacing-16);
+}
+
+.card-contact__item {
+  display: flex;
+  font-size: var(--font-xsmall);
+  gap: var(--spacing-8);
+  justify-content: left;
+  align-items: center;
+}
